@@ -1,0 +1,20 @@
+{
+    "name": "Word Bomb",
+    "description": "Get a list of words containing the letters",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.jklm.fun/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "all_frames": true
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}
